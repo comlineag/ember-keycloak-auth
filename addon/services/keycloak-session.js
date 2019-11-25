@@ -238,7 +238,7 @@ export default Service.extend({
       debug(`Keycloak session :: parsing implicit intent URL from transition :: '${url}'`);
     }
 
-    return `${window.location.origin}${url}`;
+    return `${window.location.origin}/${url}`;
   },
 
   loadUserProfile() {
